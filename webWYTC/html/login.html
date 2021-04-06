@@ -1,0 +1,62 @@
+﻿<div style="padding: 15px 100px">
+    <h3><strong resource="login_h3_title"></strong></h3>
+    <div class="row" style="margin-top: 40px">
+        <div class="col-xs-12" style="text-align:center">
+            <div class="panel panel-default" id="frmLogin">
+                <div class="panel-body" style="padding:0">
+                    <div class="row">
+                        <div class="col-xs-7" style="padding:0">
+                            <img src="../Content/images/pages/login/login.jpg" width="450px" />
+                        </div>
+                        <div class="col-xs-5" style="padding:150px 30px 0 10px;">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                    <input v-model="userid" class="form-control" resource="[placeholder]=login_input_userid" type="text" autofocus>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                    <input v-model="userid" class="form-control" resource="[placeholder]=login_input_password" type="text" autofocus>
+                                </div>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input v-model:checked="isSave" type="checkbox"><span resource="login_span_saveInfo"></span>
+                                </label>
+                            </div>
+                            <button v-on:click="login" class="btn btn-warning" resource="login_button_btnLogin"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    (function () {
+        new ZEGHS.Run(function () {
+            //初始化(讀取使用者上次保存的帳號與密碼資料)
+            var sAccount = storage.getItem("__wytc_account");
+            if (sAccount == undefined) {
+                cAccount = { userid: "", password: "", isSave: false };
+            } else {
+                cAccount = JSON.parse(sAccount);
+            }
+
+            ZEGHS.Vue({
+                el: "#frmLogin",
+                data: cAccount,
+                methods: {
+                    login: function (event) {
+                        if (this.userid.length == 0 || this.password.length == 0) {
+                            ZEGHS.MessageBox.show($.i18n.prop("login_messagebox_text_001"), $.i18n.prop("login_messagebox_caption_001"));
+                            return;
+                        }
+                    }
+                }
+            });
+        });
+    })();
+</script>

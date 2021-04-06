@@ -1,0 +1,643 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+此檔案是由您 Web 專案的發行/封裝處理程序所使用。您可以編輯此 MSBuild 檔案，
+以自訂此處理程序的行為。若要深入了解，請造訪 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\projects\wytc\webWYTC\build</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>02/13/2017 14:19:09</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>02/13/2017 14:19:09</publishTime>
+    </File>
+    <File Include="bin/Dapper.dll">
+      <publishTime>07/22/2016 14:52:40</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>03/02/2015 09:32:26</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>03/02/2015 09:32:26</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>03/08/2017 19:26:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>11/30/2016 16:07:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>12/07/2016 11:45:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>12/07/2016 11:50:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>12/06/2016 15:15:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>12/07/2016 11:49:10</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>12/07/2016 11:50:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>12/06/2016 15:09:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.SignalR.Core.dll">
+      <publishTime>05/04/2017 02:25:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.SignalR.SystemWeb.dll">
+      <publishTime>05/04/2017 02:25:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 02:06:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>04/05/2017 11:53:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>02/13/2015 13:16:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>02/13/2015 13:16:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>08/03/2014 20:33:56</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>11/13/2012 12:19:34</publishTime>
+    </File>
+    <File Include="bin/PK10.Runtime.Network.dll">
+      <publishTime>09/18/2019 15:59:25</publishTime>
+    </File>
+    <File Include="bin/PK10.runtime.official.dll">
+      <publishTime>09/20/2019 11:48:12</publishTime>
+    </File>
+    <File Include="bin/Pk10.Security.Codec.dll">
+      <publishTime>09/18/2019 15:59:25</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/System.IO.Compression.FileSystem.dll">
+      <publishTime>11/05/2015 20:36:48</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>01/28/2015 04:02:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>01/28/2015 04:02:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>01/28/2015 04:03:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/28/2015 04:02:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/11/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/28/2015 04:02:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/WebApiThrottle.dll">
+      <publishTime>05/11/2014 18:33:32</publishTime>
+    </File>
+    <File Include="bin/Wytc.runtime.official.dll">
+      <publishTime>09/08/2020 20:43:56</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/EntityFramework.resources.dll">
+      <publishTime>03/02/2015 09:32:38</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/EntityFramework.SqlServer.resources.dll">
+      <publishTime>03/02/2015 09:32:38</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.AspNet.SignalR.Core.resources.dll">
+      <publishTime>05/04/2017 02:34:18</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.AspNet.SignalR.SystemWeb.resources.dll">
+      <publishTime>05/04/2017 02:34:24</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Owin.Host.SystemWeb.resources.dll">
+      <publishTime>02/13/2015 13:23:52</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Owin.resources.dll">
+      <publishTime>04/05/2017 12:02:34</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Owin.Security.resources.dll">
+      <publishTime>02/13/2015 13:23:56</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/System.Net.Http.Formatting.resources.dll">
+      <publishTime>01/28/2015 04:02:46</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/System.Web.Http.resources.dll">
+      <publishTime>01/28/2015 04:02:58</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/System.Web.Http.WebHost.resources.dll">
+      <publishTime>01/28/2015 04:03:48</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap/bootstrap-theme.min.css">
+      <publishTime>07/24/2017 14:47:59</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap/bootstrap-theme.min.css.map">
+      <publishTime>02/13/2017 16:02:20</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap/bootstrap.min.css">
+      <publishTime>04/13/2020 22:47:02</publishTime>
+    </File>
+    <File Include="Content/css/bootstrap/bootstrap.min.css.map">
+      <publishTime>04/13/2020 22:47:02</publishTime>
+    </File>
+    <File Include="Content/css/pk10/theme-mobile.css">
+      <publishTime>01/20/2019 22:11:13</publishTime>
+    </File>
+    <File Include="Content/css/pk10/theme.css">
+      <publishTime>12/04/2018 17:11:28</publishTime>
+    </File>
+    <File Include="Content/css/plugins/bootstrap-table/bootstrap-table.css">
+      <publishTime>07/02/2016 17:10:39</publishTime>
+    </File>
+    <File Include="Content/css/plugins/datetimepicker/bootstrap-datetimepicker.min.css">
+      <publishTime>06/14/2017 09:52:55</publishTime>
+    </File>
+    <File Include="Content/css/plugins/holdon/holdon.css">
+      <publishTime>08/26/2016 15:07:24</publishTime>
+    </File>
+    <File Include="Content/css/wytc/theme-mobile.css">
+      <publishTime>04/14/2020 09:24:31</publishTime>
+    </File>
+    <File Include="Content/css/wytc/theme.css">
+      <publishTime>07/29/2020 21:51:22</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>02/02/2017 17:49:36</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>04/12/2020 20:50:06</publishTime>
+    </File>
+    <File Include="html/balanceReport.html">
+      <publishTime>07/31/2017 16:36:41</publishTime>
+    </File>
+    <File Include="html/cooperation.html">
+      <publishTime>12/21/2017 16:32:27</publishTime>
+    </File>
+    <File Include="html/deposits.html">
+      <publishTime>12/06/2017 10:01:03</publishTime>
+    </File>
+    <File Include="html/implement/class.zh-TW.html">
+      <publishTime>09/08/2020 20:35:42</publishTime>
+    </File>
+    <File Include="html/implement/pallet.zh-TW.html">
+      <publishTime>09/08/2020 20:43:54</publishTime>
+    </File>
+    <File Include="html/login.html">
+      <publishTime>07/30/2020 17:30:43</publishTime>
+    </File>
+    <File Include="html/main.html">
+      <publishTime>08/04/2020 17:11:11</publishTime>
+    </File>
+    <File Include="html/modifyAccount.html">
+      <publishTime>12/05/2018 15:58:12</publishTime>
+    </File>
+    <File Include="html/modifyMember.html">
+      <publishTime>12/05/2018 15:59:30</publishTime>
+    </File>
+    <File Include="html/modifyPassword.html">
+      <publishTime>12/05/2018 16:03:32</publishTime>
+    </File>
+    <File Include="html/payment/index.html">
+      <publishTime>12/05/2017 11:23:08</publishTime>
+    </File>
+    <File Include="html/payment/scanPay.html">
+      <publishTime>08/09/2017 17:23:54</publishTime>
+    </File>
+    <File Include="html/payment/scanPayFromHDN.html">
+      <publishTime>12/06/2017 18:02:36</publishTime>
+    </File>
+    <File Include="html/payment/scanPayFromJYF.html">
+      <publishTime>12/06/2017 09:27:09</publishTime>
+    </File>
+    <File Include="html/payment/scanPayFromWFT.html">
+      <publishTime>09/19/2017 17:45:15</publishTime>
+    </File>
+    <File Include="html/prizeHistory.html">
+      <publishTime>01/23/2019 19:00:17</publishTime>
+    </File>
+    <File Include="html/profession/main.zh-TW.html">
+      <publishTime>08/31/2020 16:28:26</publishTime>
+    </File>
+    <File Include="html/profile/department.zh-TW.html">
+      <publishTime>08/25/2020 22:30:21</publishTime>
+    </File>
+    <File Include="html/profile/idea.zh-TW.html">
+      <publishTime>08/27/2020 09:47:24</publishTime>
+    </File>
+    <File Include="html/profile/organize.zh-TW.html">
+      <publishTime>07/31/2020 16:36:13</publishTime>
+    </File>
+    <File Include="html/profile/point.zh-TW.html">
+      <publishTime>08/25/2020 22:25:56</publishTime>
+    </File>
+    <File Include="html/profile/policy.zh-TW.html">
+      <publishTime>08/31/2020 16:55:40</publishTime>
+    </File>
+    <File Include="html/profile/summary.zh-TW.html">
+      <publishTime>07/30/2020 21:46:01</publishTime>
+    </File>
+    <File Include="html/profit.html">
+      <publishTime>07/24/2019 14:48:30</publishTime>
+    </File>
+    <File Include="html/safeguard/safeguard.zh-TW.html">
+      <publishTime>08/31/2020 17:04:37</publishTime>
+    </File>
+    <File Include="html/selector.html">
+      <publishTime>05/23/2019 14:05:28</publishTime>
+    </File>
+    <File Include="html/send1stAnd2ndRank.html">
+      <publishTime>01/26/2019 15:10:33</publishTime>
+    </File>
+    <File Include="html/send1stAnd2ndReverse.html">
+      <publishTime>01/26/2019 15:18:38</publishTime>
+    </File>
+    <File Include="html/send1stAnd2ndSum.html">
+      <publishTime>01/26/2019 12:49:30</publishTime>
+    </File>
+    <File Include="html/sendPK.html">
+      <publishTime>12/13/2018 16:11:45</publishTime>
+    </File>
+    <File Include="html/sendRadio.html">
+      <publishTime>07/17/2017 15:01:57</publishTime>
+    </File>
+    <File Include="html/sendRank.html">
+      <publishTime>06/25/2019 11:52:33</publishTime>
+    </File>
+    <File Include="html/sendRankFromLocation.html">
+      <publishTime>06/05/2017 15:25:27</publishTime>
+    </File>
+    <File Include="html/sendRankThree.html">
+      <publishTime>02/23/2019 15:04:26</publishTime>
+    </File>
+    <File Include="html/service/cargo.zh-TW.html">
+      <publishTime>08/31/2020 10:30:38</publishTime>
+    </File>
+    <File Include="html/service/chemical.zh-TW.html">
+      <publishTime>08/31/2020 10:31:49</publishTime>
+    </File>
+    <File Include="html/service/normal.zh-TW.html">
+      <publishTime>08/31/2020 10:32:40</publishTime>
+    </File>
+    <File Include="html/service/other.zh-TW.html">
+      <publishTime>09/09/2020 17:02:00</publishTime>
+    </File>
+    <File Include="html/service/special.zh-TW.html">
+      <publishTime>08/31/2020 10:37:42</publishTime>
+    </File>
+    <File Include="html/service/steel.zh-TW.html">
+      <publishTime>08/31/2020 10:29:42</publishTime>
+    </File>
+    <File Include="html/solution/serviceItem.zh-TW.html">
+      <publishTime>08/06/2020 12:43:01</publishTime>
+    </File>
+    <File Include="html/solution/solution.zh-TW.html">
+      <publishTime>08/25/2020 22:52:05</publishTime>
+    </File>
+    <File Include="html/termsNotice.html">
+      <publishTime>07/24/2017 15:37:40</publishTime>
+    </File>
+    <File Include="html/test.html">
+      <publishTime>04/13/2020 22:47:02</publishTime>
+    </File>
+    <File Include="html/ticketReport.html">
+      <publishTime>12/05/2018 15:48:10</publishTime>
+    </File>
+    <File Include="html/withdrawals.html">
+      <publishTime>10/25/2017 09:22:56</publishTime>
+    </File>
+    <File Include="html/_detail.frame.html">
+      <publishTime>07/30/2020 13:35:04</publishTime>
+    </File>
+    <File Include="html/_main.frame.html">
+      <publishTime>08/07/2020 09:46:40</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>08/07/2020 10:54:47</publishTime>
+    </File>
+    <File Include="mobile.html">
+      <publishTime>07/30/2020 18:11:18</publishTime>
+    </File>
+    <File Include="mobile/balanceReport.html">
+      <publishTime>10/18/2017 11:45:17</publishTime>
+    </File>
+    <File Include="mobile/cooperation.html">
+      <publishTime>12/21/2017 16:32:28</publishTime>
+    </File>
+    <File Include="mobile/deposits.html">
+      <publishTime>10/25/2017 09:14:45</publishTime>
+    </File>
+    <File Include="mobile/login.html">
+      <publishTime>07/25/2019 18:05:40</publishTime>
+    </File>
+    <File Include="mobile/main.html">
+      <publishTime>07/25/2019 17:48:30</publishTime>
+    </File>
+    <File Include="mobile/modifyAccount.html">
+      <publishTime>11/13/2018 14:45:19</publishTime>
+    </File>
+    <File Include="mobile/modifyMember.html">
+      <publishTime>11/13/2018 14:45:19</publishTime>
+    </File>
+    <File Include="mobile/modifyPassword.html">
+      <publishTime>11/13/2018 14:45:19</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/ABC.jpg">
+      <publishTime>04/09/2016 20:51:44</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/ALIPAY.jpg">
+      <publishTime>04/09/2016 20:37:50</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/ALIPAYSCAN.jpg">
+      <publishTime>04/10/2016 09:59:58</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/ali_pay.png">
+      <publishTime>08/04/2017 16:32:55</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/BCCB.jpg">
+      <publishTime>04/09/2016 20:56:35</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/BJRCB.jpg">
+      <publishTime>08/19/2015 11:08:55</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/BOC.jpg">
+      <publishTime>04/09/2016 21:08:31</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/BOCO.jpg">
+      <publishTime>04/09/2016 20:57:55</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/CBHB.jpg">
+      <publishTime>04/10/2016 09:39:02</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/CCB.jpg">
+      <publishTime>04/09/2016 20:53:33</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/CEB.jpg">
+      <publishTime>04/09/2016 21:02:56</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/CIB.jpg">
+      <publishTime>04/09/2016 20:59:17</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/CMB.jpg">
+      <publishTime>04/09/2016 20:55:13</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/CMBC.jpg">
+      <publishTime>04/09/2016 21:00:58</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/CTTIC.jpg">
+      <publishTime>04/09/2016 21:10:02</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/GDB.jpg">
+      <publishTime>05/09/2016 10:20:43</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/HKBEA.jpg">
+      <publishTime>04/09/2016 21:10:41</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/HXB.jpg">
+      <publishTime>08/19/2015 11:08:55</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/ICBC.jpg">
+      <publishTime>04/09/2016 20:49:15</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/NBCB.jpg">
+      <publishTime>08/19/2015 11:08:55</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/NJCB.jpg">
+      <publishTime>04/10/2016 09:38:36</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/PINGANBANK.jpg">
+      <publishTime>04/09/2016 21:04:03</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/PSBS.jpg">
+      <publishTime>04/09/2016 21:07:36</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/qq.jpg">
+      <publishTime>04/09/2016 20:44:20</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/SDB.jpg">
+      <publishTime>04/09/2016 21:09:17</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/SHB.jpg">
+      <publishTime>08/19/2015 11:08:55</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/SPDB.jpg">
+      <publishTime>08/19/2015 11:08:55</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/SRCB.jpg">
+      <publishTime>08/19/2015 11:08:55</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/TENPAY.jpg">
+      <publishTime>04/09/2016 20:41:49</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/wechat_pay.png">
+      <publishTime>08/04/2017 16:32:44</publishTime>
+    </File>
+    <File Include="mobile/payment/assets/weixin.jpg">
+      <publishTime>04/09/2016 20:28:06</publishTime>
+    </File>
+    <File Include="mobile/payment/index.html">
+      <publishTime>12/05/2017 11:23:08</publishTime>
+    </File>
+    <File Include="mobile/payment/scanPayFromHDN.html">
+      <publishTime>12/06/2017 16:39:52</publishTime>
+    </File>
+    <File Include="mobile/payment/scanPayFromJYF.html">
+      <publishTime>12/04/2017 15:47:25</publishTime>
+    </File>
+    <File Include="mobile/payment/scanPayFromWFT.html">
+      <publishTime>12/06/2017 09:18:17</publishTime>
+    </File>
+    <File Include="mobile/prizeHistory.html">
+      <publishTime>12/19/2018 11:16:42</publishTime>
+    </File>
+    <File Include="mobile/profit.html">
+      <publishTime>12/14/2018 13:48:32</publishTime>
+    </File>
+    <File Include="mobile/selector.html">
+      <publishTime>05/23/2019 14:08:49</publishTime>
+    </File>
+    <File Include="mobile/send1stAnd2ndRank.html">
+      <publishTime>01/19/2019 18:08:28</publishTime>
+    </File>
+    <File Include="mobile/send1stAnd2ndReverse.html">
+      <publishTime>01/19/2019 21:44:01</publishTime>
+    </File>
+    <File Include="mobile/send1stAnd2ndSum.html">
+      <publishTime>01/26/2019 12:55:24</publishTime>
+    </File>
+    <File Include="mobile/sendPK.html">
+      <publishTime>01/17/2019 15:01:53</publishTime>
+    </File>
+    <File Include="mobile/sendRadio.html">
+      <publishTime>10/17/2017 15:13:01</publishTime>
+    </File>
+    <File Include="mobile/sendRank.html">
+      <publishTime>06/25/2019 10:20:42</publishTime>
+    </File>
+    <File Include="mobile/sendRankThree.html">
+      <publishTime>01/19/2019 22:42:20</publishTime>
+    </File>
+    <File Include="mobile/termsNotice.html">
+      <publishTime>10/17/2017 15:13:01</publishTime>
+    </File>
+    <File Include="mobile/ticketReport.html">
+      <publishTime>04/19/2019 10:17:43</publishTime>
+    </File>
+    <File Include="mobile/withdrawals.html">
+      <publishTime>10/25/2017 09:22:56</publishTime>
+    </File>
+    <File Include="mobile/_main.frame.html">
+      <publishTime>04/19/2019 15:56:37</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>06/17/2019 21:17:12</publishTime>
+    </File>
+    <File Include="paySuccess.html">
+      <publishTime>12/06/2018 10:10:51</publishTime>
+    </File>
+    <File Include="register.html">
+      <publishTime>12/06/2018 14:20:10</publishTime>
+    </File>
+    <File Include="Scripts/core/bootstrap.js">
+      <publishTime>02/13/2017 15:59:09</publishTime>
+    </File>
+    <File Include="Scripts/core/jquery.js">
+      <publishTime>02/13/2017 15:59:09</publishTime>
+    </File>
+    <File Include="Scripts/core/jquery.signalR.js">
+      <publishTime>05/12/2017 17:47:47</publishTime>
+    </File>
+    <File Include="Scripts/core/vue.js">
+      <publishTime>06/08/2017 13:18:15</publishTime>
+    </File>
+    <File Include="Scripts/plugins/bootbox.js">
+      <publishTime>08/10/2016 17:18:05</publishTime>
+    </File>
+    <File Include="Scripts/plugins/bootstrap-checkbox.js">
+      <publishTime>04/09/2016 18:20:00</publishTime>
+    </File>
+    <File Include="Scripts/plugins/bootstrap-datetimepicker.js">
+      <publishTime>06/14/2017 09:52:55</publishTime>
+    </File>
+    <File Include="Scripts/plugins/bootstrap-datetimepicker.zh-CN.js">
+      <publishTime>06/14/2017 09:52:56</publishTime>
+    </File>
+    <File Include="Scripts/plugins/bootstrap-table-group-by.js">
+      <publishTime>11/28/2016 16:28:52</publishTime>
+    </File>
+    <File Include="Scripts/plugins/bootstrap-table.js">
+      <publishTime>07/02/2016 17:10:39</publishTime>
+    </File>
+    <File Include="Scripts/plugins/holdon.js">
+      <publishTime>08/26/2016 15:04:35</publishTime>
+    </File>
+    <File Include="Scripts/plugins/jquery.i18n.js">
+      <publishTime>02/22/2016 10:07:36</publishTime>
+    </File>
+    <File Include="Scripts/plugins/jquery.qrcode.js">
+      <publishTime>05/23/2015 15:35:26</publishTime>
+    </File>
+    <File Include="Scripts/plugins/sortable.js">
+      <publishTime>12/19/2017 18:19:03</publishTime>
+    </File>
+    <File Include="Scripts/plugins/sprintf.js">
+      <publishTime>08/29/2016 13:39:11</publishTime>
+    </File>
+    <File Include="Scripts/plugins/vuedraggable.js">
+      <publishTime>12/19/2017 18:14:00</publishTime>
+    </File>
+    <File Include="Scripts/resources/Resource.Desktop_zh_TW.properties">
+      <publishTime>09/08/2020 20:37:51</publishTime>
+    </File>
+    <File Include="Scripts/resources/Resource.Mobile_zh_TW.properties">
+      <publishTime>04/12/2020 20:10:39</publishTime>
+    </File>
+    <File Include="Scripts/resources/Resource.Selector_zh_TW.properties">
+      <publishTime>04/17/2019 13:01:15</publishTime>
+    </File>
+    <File Include="Scripts/zeghs/zeghs.common.js">
+      <publishTime>04/14/2020 09:44:32</publishTime>
+    </File>
+    <File Include="Scripts/zeghs/zeghs.desktop.plugin.js">
+      <publishTime>04/14/2020 09:44:32</publishTime>
+    </File>
+    <File Include="Scripts/zeghs/zeghs.mobile.plugin.js">
+      <publishTime>04/14/2020 09:44:32</publishTime>
+    </File>
+    <File Include="Scripts/zeghs/zeghs.plugin.js">
+      <publishTime>08/22/2017 13:42:06</publishTime>
+    </File>
+    <File Include="selector.html">
+      <publishTime>02/27/2019 18:50:21</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>03/23/2017 17:18:31</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/27/2020 13:37:54</publishTime>
+    </File>
+    <File Include="__EncodePage.aspx">
+      <publishTime>07/09/2013 15:11:47</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>文揚通運股份有限公司</title>
+    <link href="Content/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/css/wytc/theme.css" rel="stylesheet" />
+    <link href="Content/css/plugins/holdon/holdon.css" rel="stylesheet" />
+    <link href="Content/css/plugins/datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <link href="Content/css/plugins/bootstrap-table/bootstrap-table.css" rel="stylesheet" />
+    <script type="text/javascript" src="Scripts/core/jquery.js"></script>
+    <script type="text/javascript" src="Scripts/core/jquery.signalR.js"></script>
+    <script type="text/javascript" src="signalr/hubs"></script>
+    <script type="text/javascript" src="Scripts/core/vue.js"></script>
+    <script type="text/javascript" src="Scripts/core/bootstrap.js"></script>
+    <script type="text/javascript" src="Scripts/plugins/jquery.i18n.js"></script>
+    <script type="text/javascript" src="Scripts/plugins/sprintf.js"></script>
+    <script type="text/javascript" src="Scripts/plugins/holdon.js"></script>
+    <script type="text/javascript" src="Scripts/plugins/bootbox.js"></script>
+    <script type="text/javascript" src="Scripts/plugins/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="Scripts/plugins/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script type="text/javascript" src="Scripts/plugins/bootstrap-table.js"></script>
+    <script type="text/javascript" src="Scripts/plugins/bootstrap-table-group-by.js"></script>
+    <script type="text/javascript" src="Scripts/plugins/sortable.js"></script>
+    <script type="text/javascript" src="Scripts/plugins/vuedraggable.js"></script>
+    <script type="text/javascript" src="Scripts/zeghs/zeghs.common.js"></script>
+    <script type="text/javascript" src="Scripts/zeghs/zeghs.desktop.plugin.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var cVideo = $("#welcome");
+            cVideo.css('top', ((window.innerHeight - cVideo.height()) / 2) + 'px');
+            cVideo.on('ended', function () {
+                $("#__divMain").dispose();
+
+                //檢查是否為手機平台瀏覽器
+                var bAndroid = /android/i.test(navigator.userAgent.toLowerCase());
+                var bIPhone = /iphone/i.test(navigator.userAgent.toLowerCase());
+                if (bAndroid || bIPhone) {
+                    ZEGHS.language("zh-TW");  //選擇瀏覽器預設語系 (自動選取語系="window.navigator.language")
+                    ZEGHS.loadPage("__divMain", "html/main.html", "html/_main.frame.html");
+                    //window.location.href = "mobile.html" + window.location.search;
+                } else {
+                    ZEGHS.language("zh-TW");  //選擇瀏覽器預設語系 (自動選取語系="window.navigator.language")
+                    ZEGHS.loadPage("__divMain", "html/main.html", "html/_main.frame.html");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="__divMain">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #000;
+            }
+
+            #wrapper {
+                position: relative;
+                margin: 0 auto;
+                width: 0;
+            }
+
+            #welcome {
+                position: absolute;
+                left: -480px;
+            }
+        </style>
+        <div id="wrapper">
+            <video id="welcome" width="960" height="540" autoplay="autoplay" muted="muted">
+                <source src="Content/videos/welcome.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</body>
+</html>

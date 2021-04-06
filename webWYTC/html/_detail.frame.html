@@ -1,0 +1,60 @@
+﻿<div id="__detailPanel" frame-context-id="detail-frame-content">
+    <div id="detail-frame-shadow">
+        <div class="row detail-frame-background">
+            <div class="col-xs-3" id="detail-frame-title">
+                {{ (paths[1] == undefined) ? '' : paths[1] }}
+            </div>
+            <div class="col-xs-9" id="detail-frame-suburl">
+                <a v-for="item in items" v-on:click="onOpenUrl(item)">{{ item.text }}　</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12" style="padding: 0">
+                <img v-bind:src="getBannerUrl" width="100%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12" id="detail-frame-content">
+            </div>
+        </div>
+    </div>
+    <div class="row" id="detail-frame-footer">
+        <div class="col-xs-12" style="padding: 0">
+            <span>Home</span>
+            <span v-for="path in paths">{{ path }}</span>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    (function () {
+        new ZEGHS.Run(function () {
+            var cArgs = session.getValue("__args_detail_info");
+            if (cArgs == undefined) {
+                ZEGHS.loadPage("__divFrameContext", "html/main.html");
+                return;
+            } else {
+                session.remove("__args_detail_info");
+            }
+
+            ZEGHS.Vue({
+                el: "#__detailPanel",
+                data: { banner: cArgs.banner, items: cArgs.items, paths: cArgs.paths },
+                mounted: function() {
+                    ZEGHS.loadPage("detail-frame-content", cArgs.url);
+                },
+                computed: {
+                    getBannerUrl: function () {
+                        return "../Content/images/pages/_detail.frame/" + this.banner;
+                    }
+                },
+                methods: {
+                    onOpenUrl: function (item) {
+                        this.paths.pop();
+                        this.paths.push(item.text);
+                        ZEGHS.loadPage("detail-frame-content", item.url);
+                    }
+                }
+            });
+        });
+    })();
+</script>
